@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Warang+Citi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Reem+Kufi+Fun:wght@400..700&display=swap');
+
+/*commentaire*/
+body {
+
+    background-image: radial-gradient(circle at center center, rgb(233, 240, 92),rgb(236, 129, 32));
+
+    text-align: center;
+
+    --bg-color: rgb(0, 0, 0);
+
+    font-family: "Lora", serif;
+
+}
+
+h1, h2, h3 {
+
+    color: var(--bg-color);
+
+    font-family: "Playpen Sans", cursive;
+
+} 
+
+.tableau {
+
+    table,th, td {
+
+     border: 1px double black;
+      }
+    margin: auto;
+
+    padding: auto; 
+
+}
+
+td {
+
+    border-radius: 4px;
+
+}
+
+.arrondi {
+
+    border-radius: 20px;
+
+}
+
+.pub {
+
+    border-radius: 20px;
+
+    float: right;
+
+}
+
+#tableau-article-trois {
+
+    clear: both;
+
+}
+
+a {
+    color: #021C39;
+
+}
+
+a:hover {
+
+    text-decoration: underline 3px;
+
+    color: red ;
+
+}
+
+a:target {
+
+    background: blueviolet;
+
+}
+
+p::first-letter {
+
+    font-family: "Bungee Tint", sans-serif;
+
+font-size: 2.5em;
+
+color: darkblue ;
+
+margin-right: 2px;
+
+}
+
+#p2::before {
+
+    content: "Ma";
+
+    color: white;
+
+    padding: 5px;
+
+    background-color: darkblue;
+
+    border-radius: 20px;
+
+    font-size: 0.8em;
+
+}
+
+
+#expériences {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch ;
+
+}
+
+#skills {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+}
+
+#compétences {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+
+    body{background-color: orange;}
+    #article {
+        display:grid ;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-gap: 10px;
+        grid-auto-rows: minmax (100px, auto) ;
+    }
+
+}
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head> 
+        <!--nom du document-->
+        <title> portfolio T'SJOENAnthonin </title> 
+        
+        <meta charset="UTF-8"/>
+        <!-- lien vers css-->
+        <link href="asset/style.css" rel="stylesheet">  
+    </head>
+
+    <body>
+
+        <header>
+             <!--haut de page-->
+            <h1> le canard déchainée </h1>
+
+        </header>
+
+        <!--photo de profil-->
+        <img class="arrondi" src="/image/photo de profil.jpeg" width="10%" alt="photo vu de face de T'sjoen Anthonin"/> 
+         
+        <!--class titre pour le style css--> 
+        <h2 class="titre"> A propos </h2>
+          
+        <p> T'sjoen Anthonin,jeune homme de 18 ans,qui recherche un travail dans la monde de l'informatique </p>
+         
+        <h2> Où me trouver? </h2>
+        <div  style="width: 100%">
+            <iframe class="arrondi" width="50%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=23%20Rue%20Paul%20Toutain%2014000%20Caen+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+             
+            <!--lien pour afficher la carte google maps-->
+            <a href="https://www.gps.ie/">gps trackers</a>
+             
+            </iframe>
+         
+        </div>
+
+        <h2 > Mes compétences </h2>
+        <section id="skills">
+        <h3> Hards skills </h3>
+        <h3> Softs skills </h3>
+        </section>
+        <section id="compétences">
+       
+
+        <!--liste de mes compétences-->
+        <ul>
+            <li> connaisance en <b>html</b> </li>
+
+            <li> <b>impresion 3d</b> </li>
+            
+            <li> Je sais utiliser différents logiciels tels <b>qu'Excel, Power point, CES Edupack ou Solidworks</b> </li> 
+
+        </ul>
+
+        <ul>
+
+            <li> <b>patience</b> </li>
+
+            <li> toujours <b>etre a l'écoute</b> </li>
+
+            <li> Connaissances en <b>histoire et en géographie</b> </li>
+
+        </ul>
+        </section>
+
+        <!--les différent etablissement de ma scolarité-->
+        <h2> Ma scolarité </h2>
+
+        <section >
+            <!--tableau avec une classe pour lui donner un style avec le fichier css-->
+            <table class="tableau">
+                
+                <tr class="tableau">
+                    
+                    <td>Collège</td>
+
+                    <td> Francois Villon,Terre de caux,Seine maritime </td>
+                </tr>
+
+                <tr class="tableau">
+                    
+                    <td> Lycée </td>
+
+                    <td> Raymond Quenau,Yvetot,Seine maritime </td>
+                </tr>
+                
+                <tr class="tableau">
+                
+                    <td> étude supérieur </td>
+
+                    <td> Supinfo,Caen,Calvados </td>
+                
+                </tr>
+            </table>
+        </section>
+
+        <h2> Mes éxperiences </h2>
+
+        <section id="expériences">
+            <!--liste de mes expériences -->
+            <uL>
+                <li> Musée des pêcheries - Stage 6 avril 2020 au 11 avril 2020 - Fécamp (Seine-Maritime) </li>
+
+                <li> Participation à la création d'un site internet avec le logiciel Wizishop </li>
+                
+                <li> Association Normanville à toutes jambes - Bénévolat Juin 2023  - Normanville (Seine-Maritime) </li>
+
+                <li> Travai d'été dans le service informatique du site éléctronucléaire de paluel Juillet 2024 (Seine Seine-Maritime) </li>
+
+            </uL>
+        </section>
+        
+        <section id="formulaire">
+        
+            <!--formulaire pour envoyer un nom,numéro de téléphone,E-mail et u message sur une boite mail temporaire-->
+            <form  action="https://api.web3forms.com/submit" method="POST"> 
+
+
+                <!--système inutile car utilisation d'une boite mail temp/ pour reutilisation refaire avec une nouvele boite mail -->
+                <input type="hidden" name="apikey" value="fa689e32-b2c6-4d50-88ce-78fd02dc5863"> 
+
+                <div>
+                    <!--partie du formulaire pour le nom-->
+                    <label for="name">Nom :    </label> 
+
+                    <input type="text" name="name" id="name" class="photo" required/>
+
+                </div>
+
+                <div>
+                    <!--partie du formulaire pour le mail-->
+                    <label for ="email">Email :    </label>
+
+                    <input type="email" name="email" id="email"class="photo" required/>
+                </div>
+
+                <div>
+                    <!--partie du formulaire pour le numéro de téléphone-->
+                    <label for="tel">Numéro de téléphone :    </label> 
+
+                    <input type="tel" name="tel" id="tel" class="photo" required/>
+                </div>
+
+                <div>
+                    <!--partie du formulaire pour le message-->
+                    <label for message=>Message :    </label> 
+
+                    <textarea name="message" class="arrondi" rows="10" cols="30"> </textarea>
+                </div>
+
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                
+                   <div>
+                    <input type="checkbox" name="envoyer" value="accepter">
+
+                    <!--bouton accepter d'etre reontacter-->
+                    <label for="accepter"> accepter d'etre recontacter </label> 
+                
+                </div>
+
+                <div>
+                    <input type="checkbox" name="envoyer" value="accepter">
+                    <!--bouton accepter de recevoir des comminications commérciales -->
+                    <label for="accpter"> accepter de recevoir des communications commérciales </label> 
+
+                </div>
+                
+                
+                <div>
+                    <!--bouton envoyer-->
+                    <input type="submit" class="arrondi" value="envoyer"> 
+                </div> 
+
+                
+            </form>
+        </section>
+
+        
+        <section>
+        <h2> Actualité </h2>
+        <div id="article">
+            <article>
+                <h3> La danse du siècle </h3>
+                
+                <!--photo du premier article-->    
+                <img class="arrondi" src="image/loulou.jpg" width="50%" alt="photo d'une fille qui sourit "/>  
+                
+                <h4> La meilleur danse de sa vie </h4>
+
+                <!--lien vers le premier article-->
+                <a href="article/article1.html"> Voir plus </a>
+            </article>
+            
+            <article>
+                <h3> Est-ce qu'il a reussie? </h3>
+                
+                <!--photo du deuxieme article-->
+                <img class="arrondi" src="image/inox.jpg" width="75%" alt="photo de inoxtag avec un masque a gaz pour monter l'Evreste"/>
+                
+                <h4> Est-ce que le célébre youtubeur inoxtag a gravit l'Evreste </h4>
+                
+                <!--lien vers le deuxieme article-->
+                <a href="article/article2.html"> Voir plus </a>
+            </article>
+            
+            <article>
+                <h3> Un tout nouvelle univers fictif </h3>
+                
+                <!--photo du troisieme article-->
+                <img class="arrondi" src="image/astoria.jpg" width="40%" alt="photo d'une vu spatial fictif"/>
+                
+                <h4> Venez a la découverte d'Astoria </h4>
+                
+                <!--lien vers le troisieme article-->
+                <a href="article/article3.html"> Voir plus </a>
+            
+            </article>
+        </div>
+        </section>
+
+        <!--debut du footer-->
+        <footer>
+            
+            <h2> Comment me contacter </h2>
+
+            <!-- tableau avec mes coordonée pour me recontacter et avec classe pour le css-->
+            <table class="tableau">
+                <tr class="tableau">
+
+                    <td> Adresse mail </td>
+
+                    <td> Numéro de téléphone </td>
+
+                </tr>
+                
+                <tr class="tableau">
+                    
+                    <td> anthonin.t-sjoen@supinfo.com </td>
+
+                    <td> 06.79.31.74.06 </td>
+
+                </tr>
+            </table>
+
+        </footer>
+
+    </body>
+   
+</html> <!--fin du fichier-->
